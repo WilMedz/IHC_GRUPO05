@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Fuente de Vida Librería</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="container auth-container">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Icono Fuente de Vida Librería" class="auth-logo-icon">
+            <h2>Registrarse</h2>
+            <p class="subtitle">Cree una cuenta</p>
+        </div>
+        
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="fullName">Nombres Completos</label>
+                <div class="input-icon-group">
+                    <input type="text" id="fullName" placeholder="Ingrese sus nombres" required>
+                    <span class="icon icon-person"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="emailRegister">Ingrese su correo</label>
+                <div class="input-icon-group">
+                    <input type="email" id="emailRegister" placeholder="email@email.com" required>
+                    <span class="icon icon-email"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="passwordRegister">Crear contraseña</label>
+                <div class="input-icon-group">
+                    <input type="password" id="passwordRegister" placeholder="********" required>
+                    <span class="icon icon-key"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Reescribir contraseña</label>
+                <div class="input-icon-group">
+                    <input type="password" id="confirmPassword" placeholder="********" required>
+                    <span class="icon icon-lock"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Registrarme</button>
+        </form>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <div class="container search-page-container">
+        <a href="products.html" class="back-button">
+            <span class="arrow">&larr;</span>
+        </a>
+        <h1 class="search-title">Buscar</h1>
+
+        <div class="search-bar-container">
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Buscar">
+            </div>
+        </div>
+        
+        <h3 class="section-title">Búsqueda reciente</h3>
+        <div class="recent-cards-grid">
+            <div class="recent-card">
+                <img src="images/producto_ejemplo1.jpg" alt="Estimulación Lector COQUITO">
+                <p>Estimulación y Reforzamiento Lector COQUITO</p>
+                <span class="price">s/. 7.90</span>
+            </div>
+            <div class="recent-card">
+                <img src="images/producto_ejemplo2.jpg" alt="Agenda 2026 Stitch">
+                <p>Agenda 2026 Stitch DGNOTTAS</p>
+                <span class="price">s/. 17.00</span>
+            </div>
+        </div>
+
+        <h3 class="section-title">Recomendaciones para ti</h3>
+        <ul class="recommendations-list">
+            <li>
+                <img src="images/producto_ejemplo3.jpg" alt="Colores CLASS&WORK" class="recommendation-thumbnail">
+                <div class="recommendation-details">
+                    <span>Colores CLASS&WORK Triangulares | Caja 15un</span>
+                    <div class="stock">⭐️ Stock: 20 un.</div>
+                </div>
+            </li>
+            <li>
+                <img src="images/producto_ejemplo4.jpg" alt="Set PLAYDOH Crea y Decora" class="recommendation-thumbnail">
+                <div class="recommendation-details">
+                    <span>Set PLAYDOH Crea y Decora</span>
+                    <div class="stock">⭐️ Stock: 12 un.</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/search.js"></script>
+</body>
+</html>

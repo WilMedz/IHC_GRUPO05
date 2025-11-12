@@ -1,0 +1,218 @@
+/* Colores de la paleta basados en tus mockups */
+:root {
+    --color-primary: #2C63B6; /* Azul Oscuro de botones y logo */
+    --color-secondary: #F2C75A; /* Amarillo de botones */
+    --color-background: #F7F7F7; /* Fondo gris claro */
+    --color-text-dark: #333333;
+    --color-text-light: #555555;
+    --color-border: #E0E0E0;
+    --color-input-bg: #FFFFFF;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 400px; /* Ancho fijo para simular el móvil */
+    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: var(--color-text-dark);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.logo-container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* 🟢 TAMAÑO PEQUEÑO DEL LOGO PARA LOGIN/REGISTER */
+.auth-logo-icon {
+    width: 120px; 
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* --- Estilos de Botones --- */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--color-secondary); /* Amarillo */
+    color: var(--color-text-dark);
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background-color: var(--color-primary); /* Azul */
+    color: #fff;
+}
+
+/* --- Estilos de Formularios --- */
+.form-group {
+    margin-bottom: 25px;
+    padding: 0 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--color-text-dark);
+    text-align: left;
+    padding-left: 5px;
+}
+
+.input-icon-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: var(--color-input-bg);
+    padding-right: 45px;
+}
+
+.input-icon-group .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-secondary);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+/* Definiciones de Iconos */
+.icon-email::after { content: '✉️'; }
+.icon-key::after { content: '🔑'; }
+.icon-person::after { content: '👤'; }
+.icon-lock::after { content: '🔒'; }
+.icon-search::after { content: '🔍'; }
+.icon-check::after { content: '✅'; }
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    color: var(--color-text-dark);
+}
+
+/* --- Estilos de Búsqueda --- */
+
+.back-button {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px 0 20px;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.back-button .arrow {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.search-title {
+    font-size: 36px;
+    text-align: left;
+    padding: 0 20px 20px 20px;
+    margin-top: 5px;
+}
+
+.search-bar-container {
+    padding: 0 20px 30px 20px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--color-border);
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-dark);
+    font-size: 20px;
+}
+
+/* Estilo para No Resultados */
+.no-results {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.no-results .sad-face {
+    font-size: 80px;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+}
+
+.no-results h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: var(--color-text-light);
+    font-size: 16px;
+}

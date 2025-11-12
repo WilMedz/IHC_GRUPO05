@@ -1,0 +1,263 @@
+/* Colores de la paleta basados en tus mockups */
+:root {
+    --color-primary: #2C63B6; /* Azul Oscuro de botones y logo */
+    --color-secondary: #F2C75A; /* Amarillo de botones */
+    --color-background: #F7F7F7; /* Fondo gris claro */
+    --color-text-dark: #333333;
+    --color-text-light: #555555;
+    --color-border: #E0E0E0;
+    --color-input-bg: #FFFFFF;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #FFFFFF;
+    /* En el mockup, la sombra es muy sutil o inexistente; la quitamos para un look más limpio */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
+    width: 100%;
+    max-width: 400px; /* Ancho fijo para simular el móvil */
+    min-height: 100vh; /* Para que ocupe toda la pantalla en móvil */
+    padding: 0;
+    box-sizing: border-box;
+    /* Quitamos el borde radius del contenedor principal para que parezca una app nativa */
+}
+
+h1, h2, h3 {
+    color: var(--color-text-dark);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.logo-container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.auth-logo-icon {
+    width: 120px; /* Ajuste para el tamaño del logo en los formularios */
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* --- Estilos de Botones --- */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 8px; /* Bordes más marcados */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--color-secondary); /* Amarillo */
+    color: var(--color-text-dark);
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background-color: var(--color-primary); /* Azul */
+    color: #fff;
+}
+
+/* --- Estilos de Formularios (Basados en Mockups 2 y 3) --- */
+.form-group {
+    margin-bottom: 25px;
+    padding: 0 30px; /* Margen a los lados para separar del borde del contenedor */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--color-text-dark);
+    text-align: left;
+    padding-left: 5px;
+}
+
+.input-icon-group {
+    position: relative;
+    width: 100%;
+}
+
+/* El input está dentro de un contenedor redondeado */
+.input-icon-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 25px; /* Borde muy redondeado como en los mockups */
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: var(--color-input-bg);
+    padding-right: 45px; /* Espacio para el icono */
+}
+
+.input-icon-group .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-secondary); /* Los iconos son amarillos */
+    font-size: 18px;
+    pointer-events: none; 
+}
+
+/* Iconos usando emojis para simular (se podrían usar Font Awesome, pero es más rápido con emojis) */
+.icon-email::after { content: '✉️'; }
+.icon-password::after { content: '🔑'; }
+.icon-person::after { content: '👤'; }
+.icon-lock::after { content: '🔒'; }
+.icon-key::after { content: '🔑'; }
+.icon-search::after { content: '🔍'; }
+.icon-check::after { content: '✅'; }
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    color: var(--color-text-dark);
+}
+
+/* --- Estilos de Búsqueda (Mockups 6, 7, 8) --- */
+
+.back-button {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px 0 20px;
+    text-decoration: none;
+    color: var(--color-text-dark);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.back-button .arrow {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.search-title {
+    font-size: 36px;
+    text-align: left;
+    padding: 0 20px 20px 20px;
+    margin-top: 5px;
+}
+
+.search-bar-container {
+    padding: 0 20px 30px 20px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px 15px 15px 50px; /* Espacio para icono de búsqueda */
+    border: none;
+    border-radius: 25px; /* Muy redondeado */
+    background-color: var(--color-border); /* Gris claro */
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-dark);
+    font-size: 20px;
+}
+
+.recent-searches-list, .recommendations-list {
+    list-style: none;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-text-dark);
+    text-align: left;
+    margin: 30px 20px 15px 20px;
+}
+
+/* Estilo para items de búsqueda reciente (Mockup 8) */
+.recent-searches-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-light);
+    font-size: 16px;
+}
+
+.recent-searches-list li:last-child {
+    border-bottom: none;
+}
+
+.recent-searches-list li .history-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    color: var(--color-text-light);
+}
+
+.recent-searches-list li .close-icon {
+    color: var(--color-text-light);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Estilo para No Resultados (Mockup 7) */
+.no-results {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.no-results .sad-face {
+    font-size: 80px;
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+}
+
+.no-results h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: var(--color-text-light);
+    font-size: 16px;
+}

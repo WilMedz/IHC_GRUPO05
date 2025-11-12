@@ -1,0 +1,21 @@
+.auth-container {
+    /* La página de auth solo tiene padding vertical */
+    padding: 30px 0;
+}
+
+.auth-container h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.auth-container .subtitle {
+    color: var(--color-text-light);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.auth-container .btn-secondary {
+    margin-top: 20px;
+    width: calc(100% - 60px); /* Ajuste por el padding del contenedor */
+    margin-left: 30px;
+}
