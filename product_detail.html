@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <div class="container product-detail-page">
+        <div class="header-container">
+            <div class="top-bar">
+                <a href="#">Ayuda y Contacto</a>
+                <a href="#">Locales</a>
+                <a href="#">Promociones</a>
+            </div>
+
+            <div class="main-nav-bar">
+                <img src="images/logo.png" alt="Logo Librería Fuente de Vida" class="auth-logo-icon">
+                
+                <div class="header-search">
+                    <input type="text" placeholder="Buscar por título, autor o ISBN">
+                    <button class="search-icon-btn" onclick="window.location.href='search.html'">🔍</button>
+                </div>
+                
+                <div class="header-user-actions">
+                    <a href="login_client.html">
+                        <span class="icon-wrapper">👤</span>
+                        Mi Cuenta
+                    </a>
+                    <a href="cart.html">
+                        <span class="icon-wrapper">🛒</span>
+                        Carrito
+                    </a>
+                </div>
+            </div>
+
+            <div class="category-nav">
+                <a href="#" class="active-category">Libros</a>
+                <a href="#">Útiles Escolares</a>
+                <a href="#">Juegos Didácticos</a>
+                <a href="#">Tecnología</a>
+                <a href="#">Regalos y Papelería</a>
+            </div>
+        </div>
+        <a href="products.html" class="back-button"><span class="arrow">&larr;</span> Volver al Catálogo</a>
+
+        <div class="product-detail-layout">
+            <img src="images/producto1.jpg" alt="Estimulación Lectora COQUITO" class="detail-image">
+            
+            <div class="detail-info">
+                <p class="breadcrumbs">
+                    <a href="products.html">Catálogo</a> > Útiles > Cuadernos
+                </p>
+                
+                <h2>Estimulación Lectora COQUITO</h2>
+                
+                <p style="font-size: 20px; color: var(--color-text-light); margin-bottom: 5px;">Autor: Varios | Editorial: Santillana</p>
+
+                <p class="detail-price">S/ 7.90</p>
+                
+                <p style="font-weight: bold; margin-bottom: 5px;">Cantidad</p>
+                <div class="quantity-control">
+                    <button id="minusBtn">-</button>
+                    <span id="quantity">1</span>
+                    <button id="plusBtn">+</button>
+                </div>
+                
+                <button id="addToCartBtn" class="btn btn-primary" onclick="window.location.href='cart.html'" style="border-radius: 0; padding: 10px 30px; margin-bottom: 20px;">
+                    Añadir al Carrito
+                </button>
+
+                <hr style="border-top: 1px solid var(--color-border); margin: 30px 0;">
+
+                <p style="font-weight: bold;">Descripción del Producto</p>
+                <p class="detail-description">
+                    Este cuaderno de actividades está diseñado para reforzar la lectura en los niveles básicos. Contiene ejercicios de comprensión, vocabulario y caligrafía. Ideal para niños de 6 a 8 años.
+                    <br><br>
+                    **Detalles Técnicos:** Formato A4, 120 páginas, Tapa blanda, Edición 2024. Stock: 50 unidades.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/products.js"></script>
+</body>
+</html>
